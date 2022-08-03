@@ -11,6 +11,11 @@ article aside {
     float: left;
 }
 
+article h2 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
 .sidebar {
     padding-block: 1em;
     max-width: 32ch;
