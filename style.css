@@ -29,6 +29,7 @@ article aside {
 }
 
 header {
+    position: relative;
     background-color: var(--color-brand-primary);
     color: white;
     display: grid;
@@ -37,6 +38,17 @@ header {
     padding: 3rem 6rem 1rem;
     justify-content: center;
     margin-top: 2rem;
+    width: 100%;
+}
+
+header::after {
+    position: absolute;
+    content: '';
+    inset: 10% 25%;
+    border-radius: 100%;
+    box-shadow: 0 0 100px #0008, 0 0 75px #000b;
+    background: yellow;
+    z-index: -1;
 }
 
 header img {
@@ -64,6 +76,7 @@ header .title h1 {
 }
 
 header nav {
+    font-family: Avenir, sans-serif;
     grid-column: span 2;
     font-weight: 700;
     letter-spacing: 1px;
