@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Tricks Screencast Episode 1. My take on the website from 2008 on the CSS-Tricks YouTube channel.">
+    <title>Awesome Website from CSS-Tricks</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         :root {
+            --color-brand-primary: #570a0a;
+            --image-drop-shadow: drop-shadow(2px 6px 0.25rem rgba(0, 0, 0, 0.5));
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+        }
+        
+        body {
+            font-family: arial, helvetica, sans-serif;
+            margin: 0;
+            background-color: #f5ecd4;
+            color: #333;
+            display: grid;
+            min-height: 100vh;
+            grid-template-rows: auto 1fr auto;
+            accent-color: var(--color-brand-primary);
+        }
+        
+        h2 {
+            margin-block-end: 1em;
+        }
+        
+        p {
+            margin-block-end: 1em;
+        }
+        
+        a {
+            color: var(--color-brand-primary);
+            text-underline-offset: 0;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img width="220" src="flat-tv.png" alt="computer screen with stylized donkey and elephant images" />
+        <div class="title">
+            <span>Just an example</span>
+            <h1>Awesome Website</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">press</a></li>
+                <li><a href="#">history</a></li>
+                <li><a href="#">project</a></li>
+                <li><a href="#">team</a></li>
+                <li><a href="#">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <aside>
+                <h3>Quick Jumps</h3>
+                <ul>
+                    <li>See the latest press release</li>
+                    <li>What others are saying about 'the project'</li>
+                    <img src="tv-remote.png" alt="TV remote control" />
+                </ul>
+            </aside>
+            <h2>Expect record spending for political ads in 2008</h2>
+            <p><strong>CHICAGO/MADISON, W1</strong> – All evidence point to the fact that 2008 will again be a record year for political ad spending. With competitive Presidential primaries in both parties, and no incumbent running, there is a high likelihood
+                that major party nominees will bypass federal funds and spending limits for the general election. In addition, the Supreme Court decision in Wisconsin Right to Life v FEC is almost certain to open the door to more interest group advertising
+                on television, and advertising from other sources it likely to flood the nation as a whole – the Midwest swing states in particular.</p>
+            <p>
+                Total spending on TV ads in the presidential race is expected to top $800 million, said Bananaman's best friend's second cousin, chief operating officer of the Campaign Media Analysis Group, which tracks political advertising. Such spending totaled $500
+                million, the previous record, in the 2004 race.
+            </p>
+            <p>
+                That’s good news for the television business, which is suffering from a pullback in spending from automotive, real estate and financial service advertisers.</p>
+        </article>
+        <div class="sidebar">
+            <h2>
+                Wisconsin advertising project to analyze 2008 political advertising
+            </h2>
+            <p>With a proven track record of working with the media, the <em>Wisconsin Advertising Project</em> will again shine light on what remains the most epensive, high-profile aspect of modern politcal campaigns.</p>
+            <a href="#">Learn more</a>
+            <img src="old-tv.png" alt="Old fashioned red television with antenna on top">
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2008 <a href="https://css-tricks.com" target="blank">CSS-TRICKS.COM</a></p>
+        <nav aria-role="footer">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
